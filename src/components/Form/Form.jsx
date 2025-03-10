@@ -1,19 +1,18 @@
 import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+// const getApi = (data, quiz = [{ name: 'karlos' }, { name: 'karlos' }]) => {
 
 import IntlTelInput from 'intl-tel-input/reactWithUtils';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
 import { schemaValidationForm } from '../../utils/validation';
+import { postData } from '../../api/api';
+//   console.log(newData);
+//   return newData;
+// };
 
-const getApi = (data, quiz = [{ name: 'karlos' }, { name: 'karlos' }]) => {
-  const newData = { ...data, quiz: quiz };
-  console.log(newData);
-  return newData;
-};
-
-const Form = ({ quiz }) => {
+const Form = ({ quiz = [{ nn: 'mm' }, { kk: 'pp' }] }) => {
   const {
     register,
     handleSubmit,
@@ -24,8 +23,8 @@ const Form = ({ quiz }) => {
     resolver: yupResolver(schemaValidationForm),
   });
 
-  const onSubmit = (data) => {
-    getApi(data, quiz);
+  const onSubmit = async (data) => {
+    await postData(data, quiz);
   };
 
   return (
