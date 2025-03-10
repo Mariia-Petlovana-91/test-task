@@ -1,11 +1,18 @@
 import css from '../App/App.module.css';
-import toast, { Toaster } from 'react-hot-toast';
-import Form from '../Form/Form';
+import { Toaster } from 'react-hot-toast';
+
+import Section from '../Section/Section';
+import Container from '../Container/Container';
+import Quiz from '../Quiz/Quiz';
 
 function App() {
   return (
     <>
-      <Form />
+      <Section>
+        <Container>
+          <Quiz />
+        </Container>
+      </Section>
       <Toaster />
     </>
   );
