@@ -28,7 +28,7 @@ including form handling, validation, responsive design, and notifications.
 
 -React Hot Toast (react-hot-toast) - Toast notifications.
 
--Hook Form Resolvers (@hookform/resolvers) - Connects yup to react-hook-form for
+-Hook Form Resolvers (@hookform/resolvers) -Connects yup to react-hook-form for
 validation.
 
 ## ![Quiz Question](./public/quizQuestion.png)
