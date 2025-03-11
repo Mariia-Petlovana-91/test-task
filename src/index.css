@@ -46,6 +46,13 @@ img {
   height: auto;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+scrollbar {
+  display: none;
+}
+
 .btn {
   display: block;
   width: 100%;

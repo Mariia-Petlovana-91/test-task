@@ -13,7 +13,12 @@ function App() {
           <Quiz />
         </Container>
       </Section>
-      <Toaster />
+      <Toaster
+        position="bottom-left"
+        toastOptions={{
+          duration: 5000,
+        }}
+      />
     </>
   );
 }

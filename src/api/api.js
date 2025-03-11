@@ -18,9 +18,9 @@ export const postData = async (formData, quizValue) => {
       },
     });
 
-    toast.success('USPIH');
+    toast.success('Form sent successfully!');
     return data;
   } catch (error) {
-    toast.error(`error:${error}`);
+    toast.error(`Error:${error}.Try again later.`);
   }
 };
