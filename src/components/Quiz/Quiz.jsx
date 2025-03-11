@@ -1,40 +1,52 @@
 import { useState, useEffect } from 'react';
 
+import css from './Quiz.module.css';
+
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 import Form from '../Form/Form';
+
 import { quizData } from '../../utils/quiz';
 
 const Quiz = () => {
   const [currentQuestion, setcurrentQuestion] = useState(0);
   const [userAnswer, setUserAnsver] = useState([]);
   const onAnswerClick = (choise) => {
-    setUserAnsver(() => [...userAnswer, choise]);
+    setUserAnsver((prev) => [...prev, choise]);
     setcurrentQuestion((prev) => prev + 1);
   };
 
-  useEffect(() => {}, [userAnswer, currentQuestion]);
   return (
-    <div>
-      <ResponsiveImage />
+    <div className={css.quizContainer}>
       {userAnswer.length === quizData.length ? (
         <Form quizAnswer={userAnswer} />
       ) : (
-        <div>
-          <h2>{quizData[currentQuestion].question}</h2>
-          <ul>
+        <div className={css.quizQuestionContainer}>
+          <h3 className={css.quizQuestionTitle}>
+            {quizData[currentQuestion].question}
+          </h3>
+          <p className={css.quizQuestionDescript}>
+            {quizData[currentQuestion].description}
+          </p>
+
+          <ul className={css.quizQuestionList}>
             {quizData[currentQuestion].answers.map((answer, index) => (
-              <li key={index}>
-                <button type="button" onClick={() => onAnswerClick(answer)}>
+              <li className={css.quizQuestionItem} key={index}>
+                <button
+                  className={css.quizQuestionBtn}
+                  type="button"
+                  onClick={() => onAnswerClick(answer)}
+                >
                   {answer}
                 </button>
               </li>
             ))}
           </ul>
-          <p>
+          <p className={css.quizNumber}>
             {userAnswer.length}/{quizData.length}
           </p>
         </div>
       )}
+      <ResponsiveImage />
     </div>
   );
 };

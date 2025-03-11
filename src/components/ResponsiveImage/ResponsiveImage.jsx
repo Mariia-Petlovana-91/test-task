@@ -1,15 +1,17 @@
 import { useMediaQuery } from 'react-responsive';
-import imgMobile from '../../img/mobile.webp';
+
 import imgTablet from '../../img/tablet.webp';
 
+import css from './ResponsiveImage.module.css';
+
 const ResponsiveImage = () => {
-  const isMobile = useMediaQuery({ maxWidth: 480 });
-  const isTablet = useMediaQuery({ minWidth: 481, maxWidth: 768 });
+  const isTablet = useMediaQuery({ maxWidth: 767 });
 
   return (
     <>
-      {isMobile && <img src={imgMobile} alt="Mobile" />}
-      {isTablet && <img src={imgTablet} alt="Tablet" />}
+      {isTablet && (
+        <img className={css.imgTablet} src={imgTablet} alt="Tablet image" />
+      )}
     </>
   );
 };
