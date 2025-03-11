@@ -1,38 +1,41 @@
-# React + Vite
+# Quiz App
 
-This template provides a
-minimal setup to get React
-working in Vite with HMR and
-some ESLint rules.
+## Overview
 
-Currently, two official
-plugins are available:
+This project is a dynamic and interactive Quiz Application built with React. It
+leverages modern frontend technologies to provide a seamless user experience,
+including form handling, validation, responsive design, and notifications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses
-  [Babel](https://babeljs.io/)
-  for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/)
-  for Fast Refresh
+## Technologies Used
 
-# Встановлення:
+-React (react, react-dom) - Core library for building the user interface.
 
-npm install
+-React Hook Form (react-hook-form) - Efficient form management.
 
-# Запуск локального сервера:
+-Yup (yup) - Form validation schema.
 
-npm run dev
+-Axios (axios) - HTTP requests handling.
 
-# Запуск продакшен:
+-Intl-Tel-Input (intl-tel-input) - International phone number input support.
 
-npm run build
+-Clsx (clsx) - Conditional class name utility.
 
-# Використано:
+-Modern Normalize (modern-normalize) - CSS reset for consistent styling.
 
-[🌟clsx] [🌟modern-normalize]
-[🌟react] [🌟react-dom]
-[🌟react-icons] [🌟скидання
-стилів дефолтних стилів
-уindex.css] [🌟додано
-файл.prettierrc]
+-React Icons (react-icons) - SVG icons for UI enhancement.
+
+-Responsive (react-responsive) - Responsive design utilities.
+
+-React Hot Toast (react-hot-toast) - Toast notifications.
+
+-Hook Form Resolvers (@hookform/resolvers) - Connects yup to react-hook-form for
+validation.
+
+## ![Quiz Question](./pablic/quizQuestion.png)
+
+## ![Quiz Form](./pablic/quizForm.png)
+
+## Demo
+
+- [Deployed on Vercel](https://test-task-sigma-pied.vercel.app)
+- [GitHub Repository](https://github.com/Mariia-Petlovana-91/test-task)

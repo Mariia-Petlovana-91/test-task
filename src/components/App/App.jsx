@@ -1,4 +1,3 @@
-import css from '../App/App.module.css';
 import { Toaster } from 'react-hot-toast';
 
 import Section from '../Section/Section';
