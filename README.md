@@ -31,9 +31,9 @@ including form handling, validation, responsive design, and notifications.
 -Hook Form Resolvers (@hookform/resolvers) - Connects yup to react-hook-form for
 validation.
 
-## ![Quiz Question](./pablic/quizQuestion.png)
+## ![Quiz Question](./public/quizQuestion.png)
 
-## ![Quiz Form](./pablic/quizForm.png)
+## ![Quiz Form](./public/quizForm.png)
 
 ## Demo
 
