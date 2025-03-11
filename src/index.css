@@ -46,9 +46,18 @@ img {
   height: auto;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: var(--fontColorDark);
+  background-color: var(--backgroundColorDark);
+  border-radius: 8px;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-scrollbar {
-  display: none;
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--backgroundColorLight);
 }

@@ -24,22 +24,6 @@
   margin-bottom: 10px;
 }
 
-.quizQuestionBtn {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  color: var(--fontColorDark);
-  background-color: var(--backgroundColorDark);
-  border-radius: 8px;
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.quizQuestionBtn:hover,
-.quizQuestionBtn:focus {
-  background-color: var(--backgroundColorLight);
-}
-
 .quizNumber {
   font-size: 12px;
   font-weight: 400;
@@ -50,6 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .quizContainer {
+    padding-top: 160px;
     display: flex;
     width: 100%;
     height: 100vh;
@@ -61,7 +46,7 @@
   }
 
   .quizQuestionContainer {
-    padding-top: 150px;
+    padding-top: 0px;
     padding-bottom: 0px;
     max-width: 350px;
   }
@@ -101,8 +86,7 @@
 
 @media screen and (min-width: 1440px) {
   .quizQuestionContainer {
-    padding-top: 160px;
-    max-width: 650px;
+    max-width: 600px;
   }
 
   .quizQuestionList {

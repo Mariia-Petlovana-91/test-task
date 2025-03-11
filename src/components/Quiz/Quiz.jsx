@@ -32,7 +32,7 @@ const Quiz = () => {
             {quizData[currentQuestion].answers.map((answer, index) => (
               <li className={css.quizQuestionItem} key={index}>
                 <button
-                  className={css.quizQuestionBtn}
+                  className="btn"
                   type="button"
                   onClick={() => onAnswerClick(answer)}
                 >
