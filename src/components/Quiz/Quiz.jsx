@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import css from './Quiz.module.css';
 
-import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 import Form from '../Form/Form';
+import image from '../../img/image.webp';
 
 import { quizData } from '../../utils/quiz';
 
@@ -17,6 +17,7 @@ const Quiz = () => {
 
   return (
     <div className={css.quizContainer}>
+      <img src={image} alt="imageBiuro" width="100%" height="100%" />
       {userAnswer.length === quizData.length ? (
         <Form quizAnswer={userAnswer} />
       ) : (
@@ -46,7 +47,6 @@ const Quiz = () => {
           </p>
         </div>
       )}
-      <ResponsiveImage />
     </div>
   );
 };

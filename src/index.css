@@ -1,6 +1,6 @@
 :root {
   --fontColorDark: #2d2d2d;
-  --fontColorLight: rgb(192, 185, 185);
+  --fontColorLight: rgb(143, 140, 140);
   --backgroundColorDark: rgba(202, 195, 195, 0.79);
   --lightColor: #ffffff;
   --backgroundColorLight: rgba(226, 218, 218, 0.77);
@@ -56,8 +56,8 @@ scrollbar {
 .btn {
   display: block;
   width: 100%;
-  padding: 10px;
-  font-size: 14px;
+  padding: 16px;
+  font-size: 16px;
   color: var(--fontColorDark);
   background-color: var(--backgroundColorDark);
   border-radius: 8px;
@@ -67,4 +67,12 @@ scrollbar {
 .btn:hover,
 .btn:focus {
   background-color: var(--backgroundColorLight);
+}
+
+.intl-tel-input {
+  width: 100%;
+}
+
+.iti {
+  width: 100%;
 }
